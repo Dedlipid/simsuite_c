@@ -1,5 +1,0 @@
-/home/shamaeib/simsuite_c/build/CMakeFiles/integrators.dir
-/home/shamaeib/simsuite_c/build/CMakeFiles/systems.dir
-/home/shamaeib/simsuite_c/build/CMakeFiles/main_c.dir
-/home/shamaeib/simsuite_c/build/CMakeFiles/edit_cache.dir
-/home/shamaeib/simsuite_c/build/CMakeFiles/rebuild_cache.dir
