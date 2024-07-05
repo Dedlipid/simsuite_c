@@ -90,22 +90,27 @@ void free_system(system_t *system) {
     free(system);
 }
 
-char system_names[sys_N][NAME_MAX] = {
+char system_names[SYS_N][INTG_NAME_MAX] = {
     "pendulum",
     "dpendulum"
 };
 
-void (*system_accs[sys_N])(system_t *system) = {
+void (*system_accs[SYS_N])(system_t *system) = {
     pendulum_acc,
     double_pendulum_acc
 };
 
-system_t* (*create_systems[sys_N])(double*) = {
+system_t* (*create_systems[SYS_N])(double*) = {
     create_pendulum_system,
     create_double_pendulum_system
 };
 
-double system_specs[sys_N][PARAM_MAX] = {
+double system_specs[SYS_N][SYS_PARAM_MAX] = {
     {1.0, 9.81, 0.1, 0.0}, //pendulum_spec
-    {1.0, 1.0 , 1.0, 1.0, 9.81, 1, -1, 0.0, 0.0} //double_pendulum_spec
+    {1.0, 1.0 , 1.0, 1.0, 9.81, 1, -1, 1.0, 2.0} //double_pendulum_spec
+};
+
+int system_spec_length[SYS_N] = {
+    4,
+    9
 };

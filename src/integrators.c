@@ -1,6 +1,6 @@
 #include "integrators.h"
 
-char integrator_names[INTEGRATOR_N][INTEGRATOR_NAME_MAX] = {
+char integrator_names[INTEGRATOR_N][INTEGRATOR_INTG_NAME_MAX] = {
     "euler",
     "eulerm1",
     "eulerm2",
