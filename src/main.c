@@ -111,7 +111,7 @@ int main(int argc, char **argv)
     }
 
     if (setup[SYS_PARAM_MAX] != system_spec_length[system_index])
-        setup = system_specs[system_index];
+        memccpy(setup, system_specs[system_index], SYS_PARAM_MAX, sizeof(double) * system_spec_length[system_index]);
     
     system_t *system = create_systems[system_index](setup);
 
