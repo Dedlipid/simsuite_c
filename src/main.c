@@ -63,6 +63,7 @@ int main(int argc, char **argv)
     double time_per_loop = 0.01, total_time = 10.0;
     int opt, system_index = 1, integrator_index = 3, steps_per_loop = 100, *sys_param_index = NULL;
     double setup[SYS_PARAM_MAX + 1];
+    setup[SYS_PARAM_MAX] = 0;
     char *out_name, *setup_vals;
     while ((opt = getopt(argc, argv, "s:i:t:T:l:c:o:")) != -1)
     {
@@ -91,9 +92,10 @@ int main(int argc, char **argv)
             out_name = optarg;
             break;
         default:
-            printf("Usage: sim -s [system_index] -i [integrator_index]\
-            -t [time_per_loop] -T [total_time] -l [steps_per_loop] -c [setup]\n");
-            break;
+            printf("Usage: sim -s [system_index] -i [integrator_index] \
+-t [time_per_loop] -T [total_time] -l [steps_per_loop] -c [setup] \
+-o [out_name]\n");
+            exit(EXIT_FAILURE);
         }
     }
     int loops = 1 + total_time / time_per_loop;
@@ -112,7 +114,7 @@ int main(int argc, char **argv)
 
     if (setup[SYS_PARAM_MAX] != system_spec_length[system_index])
         memccpy(setup, system_specs[system_index], SYS_PARAM_MAX, sizeof(double) * system_spec_length[system_index]);
-    
+
     system_t *system = create_systems[system_index](setup);
 
     void (*update_acc)(system_t *) = system_accs[system_index];
@@ -144,8 +146,7 @@ int main(int argc, char **argv)
 
     char *dir = dirname(resolved_path);
     char filepath[PATH_MAX];
-    printf("!!");
-    printf("%s/../%s%s.out\n", dir, "data/", out_name);
+    printf("writing to: %s/../%s%s.out\n", dir, "data/", out_name);
     snprintf(filepath, sizeof(filepath), "%s/../%s%s.out", dir, "data/", out_name);
 
     simulate(system, update_acc, loops, steps_per_loop, dt, filepath, integrator);
