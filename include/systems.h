@@ -14,6 +14,9 @@ typedef struct
     int size[2];  // Number of elements in the system and size of properties
 } system_t;
 
+typedef void (*system_acc_t)(system_t *system);
+typedef system_t *(*create_system_t)(double *);
+
 void pendulum_acc(system_t *system);
 void double_pendulum_acc(system_t *system);
 void harmonic_oscillator_acc(system_t *system);
@@ -37,12 +40,12 @@ void free_system(system_t *system);
 extern char system_names[SYS_N][INTG_NAME_MAX];
 
 // Function pointer list of size SYS_N
-extern void (*system_accs[SYS_N])(system_t *system);
+extern system_acc_t system_accs[SYS_N];
 
 // System pointer list
 extern system_t *(*create_systems[SYS_N])(double *);
 
-// Default list
+// Default system spec list
 extern double system_specs[SYS_N][SYS_PARAM_MAX];
 
 // Length of system_specs lengths

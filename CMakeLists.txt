@@ -9,9 +9,11 @@ include_directories(${PROJECT_SOURCE_DIR}/include)
 # Add integrators and systems libraries
 add_library(integrators src/integrators.c)
 add_library(systems src/systems.c)
+add_library(init src/init.c)
+add_library(simulate src/simulate.c)
 
 # Add executable
 add_executable(sim src/main.c)
 
 # Link libraries and math library
-target_link_libraries(sim integrators systems m)
+target_link_libraries(sim integrators systems init simulate m)
