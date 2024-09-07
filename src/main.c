@@ -10,7 +10,7 @@ int main(int argc, char **argv)
     double time_per_loop = 0.01,
            total_time = 10.0;
     int opt, system_index = 1,
-             integrator_index = 3,
+             integrator_index = 7,
              steps_per_loop = 100;
     double setup[SYS_PARAM_MAX + 1];
     setup[SYS_PARAM_MAX] = 0;

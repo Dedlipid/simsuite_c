@@ -1,16 +1,16 @@
 #include "systems.h"
-#include <math.h>
-#include <stdlib.h>
 
 // Pendulum system
-void pendulum_acc(system_t *system) {
+void pendulum_acc(system_t *system)
+{
     double length = system->prop[0];
     double g = system->prop[1];
     system->acc[0] = -(g / length) * sin(system->p[0]);
 }
 
 // Double pendulum system
-void double_pendulum_acc(system_t *system) {
+void double_pendulum_acc(system_t *system)
+{
     double m1 = system->prop[0];
     double m2 = system->prop[1];
     double l1 = system->prop[2];
@@ -30,14 +30,17 @@ void double_pendulum_acc(system_t *system) {
     system->acc[0] = (m2 * l1 * omega1 * omega1 * sin(delta) * cos(delta) +
                       m2 * g * sin(theta2) * cos(delta) +
                       m2 * l2 * omega2 * omega2 * sin(delta) -
-                      (m1 + m2) * g * sin(theta1)) / denominator1;
+                      (m1 + m2) * g * sin(theta1)) /
+                     denominator1;
     system->acc[1] = (-m2 * l2 * omega2 * omega2 * sin(delta) * cos(delta) +
                       (m1 + m2) * g * sin(theta1) * cos(delta) -
                       (m1 + m2) * l1 * omega1 * omega1 * sin(delta) -
-                      (m1 + m2) * g * sin(theta2)) / denominator2;
+                      (m1 + m2) * g * sin(theta2)) /
+                     denominator2;
 }
 
-system_t* create_pendulum_system(double* system_spec) {
+system_t *create_pendulum_system(double *system_spec)
+{
     system_t *pendulum = (system_t *)malloc(sizeof(system_t));
     pendulum->size[0] = 1; // State size
     pendulum->size[1] = 2; // Property size
@@ -56,7 +59,8 @@ system_t* create_pendulum_system(double* system_spec) {
     return pendulum;
 }
 
-system_t* create_double_pendulum_system(double* system_spec) {
+system_t *create_double_pendulum_system(double *system_spec)
+{
     system_t *double_pendulum = (system_t *)malloc(sizeof(system_t));
     double_pendulum->size[0] = 2; // State size
     double_pendulum->size[1] = 5; // Property size
@@ -69,7 +73,7 @@ system_t* create_double_pendulum_system(double* system_spec) {
     double_pendulum->p[1] = system_spec[6];
     double_pendulum->q[0] = system_spec[7];
     double_pendulum->q[1] = system_spec[8];
-    
+
     double_pendulum->acc[0] = 0.0;
     double_pendulum->acc[1] = 0.0;
 
@@ -82,7 +86,8 @@ system_t* create_double_pendulum_system(double* system_spec) {
     return double_pendulum;
 }
 
-void free_system(system_t *system) {
+void free_system(system_t *system)
+{
     free(system->p);
     free(system->q);
     free(system->acc);
@@ -92,25 +97,21 @@ void free_system(system_t *system) {
 
 char system_names[SYS_N][INTG_NAME_MAX] = {
     "pendulum",
-    "dpendulum"
-};
+    "dpendulum"};
 
 void (*system_accs[SYS_N])(system_t *system) = {
     pendulum_acc,
-    double_pendulum_acc
-};
+    double_pendulum_acc};
 
-system_t* (*create_systems[SYS_N])(double*) = {
+create_system_t create_systems[SYS_N] = {
     create_pendulum_system,
-    create_double_pendulum_system
-};
+    create_double_pendulum_system};
 
 double system_specs[SYS_N][SYS_PARAM_MAX] = {
-    {1.0, 9.81, 0.1, 0.0}, //pendulum_spec
-    {1.0, 1.0 , 1.0, 1.0, 9.81, 1, -1, 1.0, 2.0} //double_pendulum_spec
+    {1.0, 9.81, 0.1, 0.0},                      // pendulum_spec
+    {1.0, 1.0, 1.0, 1.0, 9.81, 1, -1, 1.0, 2.0} // double_pendulum_spec
 };
 
 int system_spec_length[SYS_N] = {
     4,
-    9
-};
+    9};

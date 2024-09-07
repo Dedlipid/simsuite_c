@@ -1,6 +1,9 @@
 #ifndef SYSTEMS_H
 #define SYSTEMS_H
 
+#include <math.h>
+#include <stdlib.h>
+
 #define SYS_N 4
 #define INTG_NAME_MAX 30
 #define SYS_PARAM_MAX 12
@@ -43,7 +46,7 @@ extern char system_names[SYS_N][INTG_NAME_MAX];
 extern system_acc_t system_accs[SYS_N];
 
 // System pointer list
-extern system_t *(*create_systems[SYS_N])(double *);
+extern create_system_t create_systems[SYS_N];
 
 // Default system spec list
 extern double system_specs[SYS_N][SYS_PARAM_MAX];
