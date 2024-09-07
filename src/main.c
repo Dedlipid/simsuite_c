@@ -38,9 +38,9 @@ int main(int argc, char **argv)
              sim_init->time_per_loop / sim_init->steps_per_loop, 
              sim_init->out_name, integrator);
 
-    free_system(system);
-    free(sim_init->out_name);
-    free(sim_init);
+    // free_system(system);
+    // free(sim_init->out_name);
+    // free(sim_init);
 
     return 0;
 }

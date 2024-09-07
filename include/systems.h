@@ -4,7 +4,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-#define SYS_N 4
+#define SYS_N 6
 #define INTG_NAME_MAX 30
 #define SYS_PARAM_MAX 12
 
@@ -24,6 +24,11 @@ void pendulum_acc(system_t *system);
 void double_pendulum_acc(system_t *system);
 void harmonic_oscillator_acc(system_t *system);
 void spring_coupled_acc(system_t *system);
+void damped_harmonic_oscillator_acc(system_t *system);
+void van_der_pol_acc(system_t *system);
+void mass_spring_damper_acc(system_t *system);
+void driven_pendulum_acc(system_t *system);
+void inverted_pendulum_acc(system_t *system);
 
 // length, g, initial_angle, initial_velocity
 system_t *create_pendulum_system(double *system_spec);
@@ -36,6 +41,21 @@ system_t *create_harmonic_oscillator_system(double *system_spec);
 
 // m1, m2, k1, k2, initial_position1, initial_velocity1, initial_position2, initial_velocity2
 system_t *create_spring_coupled_system(double *system_spec);
+
+// mass, k, damping coefficient, initial_position, initial_velocity
+system_t *create_damped_harmonic_oscillator_system(double *system_spec);
+
+// mass, damping coefficient, nonlinearity parameter, initial_position, initial_velocity
+system_t *create_van_der_pol_system(double *system_spec);
+
+// mass, spring constant, damping coefficient, initial_position, initial_velocity
+system_t *create_mass_spring_damper_system(double *system_spec);
+
+// length, gravity, initial_angle, initial_angular_velocity, driving force amplitude, driving force frequency
+system_t *create_driven_pendulum_system(double *system_spec);
+
+// cart_mass, pendulum_mass, pendulum_length, gravity, initial_cart_position, initial_cart_velocity, initial_pendulum_angle, initial_pendulum_angular_velocity
+system_t *create_inverted_pendulum_system(double *system_spec);
 
 void free_system(system_t *system);
 
