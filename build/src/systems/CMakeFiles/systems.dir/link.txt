@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsystems.a CMakeFiles/systems.dir/systems.c.o CMakeFiles/systems.dir/pendulum.c.o CMakeFiles/systems.dir/double_pendulum.c.o CMakeFiles/systems.dir/harmonic_oscillator.c.o CMakeFiles/systems.dir/spring_coupled.c.o CMakeFiles/systems.dir/damped_harmonic_oscillator.c.o CMakeFiles/systems.dir/van_der_pol.c.o CMakeFiles/systems.dir/mass_spring_damper.c.o CMakeFiles/systems.dir/driven_pendulum.c.o CMakeFiles/systems.dir/inverted_pendulum.c.o
+/usr/bin/ranlib libsystems.a

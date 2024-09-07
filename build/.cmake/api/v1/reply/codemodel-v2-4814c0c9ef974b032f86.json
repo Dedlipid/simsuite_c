@@ -1,0 +1,172 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2,
+						3,
+						4
+					],
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						2
+					]
+				},
+				{
+					"build" : "src/integrators",
+					"jsonFile" : "directory-src.integrators-Debug-3199aa190143b5db2f64.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/integrators",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "src/systems",
+					"jsonFile" : "directory-src.systems-Debug-0e8e73e831adc95c24d9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/systems",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "src/tools",
+					"jsonFile" : "directory-src.tools-Debug-45cf6c62ebae9991927b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/tools",
+					"targetIndexes" : 
+					[
+						5
+					]
+				},
+				{
+					"build" : "src/simulate",
+					"jsonFile" : "directory-src.simulate-Debug-ed2902c6f03b61b24794.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "src/simulate",
+					"targetIndexes" : 
+					[
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4
+					],
+					"name" : "SimSuite",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "init::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-init-Debug-68dc4f7976922e390374.json",
+					"name" : "init",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "integrators::@cc645d70eca185fd34e2",
+					"jsonFile" : "target-integrators-Debug-8e3e2bebcc852bf93480.json",
+					"name" : "integrators",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sim::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sim-Debug-ea4b3d6f9f41c90e7175.json",
+					"name" : "sim",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 4,
+					"id" : "simulate::@d0c81352177c154f4445",
+					"jsonFile" : "target-simulate-Debug-863a0ffcf33967a6b5c2.json",
+					"name" : "simulate",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "systems::@4058b85f9e3a39c7d2b4",
+					"jsonFile" : "target-systems-Debug-0a840d15658f4111c1d1.json",
+					"name" : "systems",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "tools::@de05559f4338c8534979",
+					"jsonFile" : "target-tools-Debug-44aecc9ec8242e359970.json",
+					"name" : "tools",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/shamaeib/simsuite_c/build",
+		"source" : "/home/shamaeib/simsuite_c"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

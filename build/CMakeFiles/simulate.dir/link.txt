@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsimulate.a CMakeFiles/simulate.dir/src/simulate.c.o
+/usr/bin/ranlib libsimulate.a

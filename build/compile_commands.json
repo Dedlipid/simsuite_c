@@ -1,0 +1,117 @@
+[
+{
+  "directory": "/home/shamaeib/simsuite_c/build",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/init.dir/src/init.c.o -c /home/shamaeib/simsuite_c/src/init.c",
+  "file": "/home/shamaeib/simsuite_c/src/init.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/sim.dir/src/main.c.o -c /home/shamaeib/simsuite_c/src/main.c",
+  "file": "/home/shamaeib/simsuite_c/src/main.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/integrators",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/integrators.dir/euler_step.c.o -c /home/shamaeib/simsuite_c/src/integrators/euler_step.c",
+  "file": "/home/shamaeib/simsuite_c/src/integrators/euler_step.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/integrators",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/integrators.dir/eulerv2.c.o -c /home/shamaeib/simsuite_c/src/integrators/eulerv2.c",
+  "file": "/home/shamaeib/simsuite_c/src/integrators/eulerv2.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/integrators",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/integrators.dir/leapfrog.c.o -c /home/shamaeib/simsuite_c/src/integrators/leapfrog.c",
+  "file": "/home/shamaeib/simsuite_c/src/integrators/leapfrog.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/integrators",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/integrators.dir/rk4.c.o -c /home/shamaeib/simsuite_c/src/integrators/rk4.c",
+  "file": "/home/shamaeib/simsuite_c/src/integrators/rk4.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/integrators",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/integrators.dir/verlet.c.o -c /home/shamaeib/simsuite_c/src/integrators/verlet.c",
+  "file": "/home/shamaeib/simsuite_c/src/integrators/verlet.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/integrators",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/integrators.dir/eulerv1.c.o -c /home/shamaeib/simsuite_c/src/integrators/eulerv1.c",
+  "file": "/home/shamaeib/simsuite_c/src/integrators/eulerv1.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/integrators",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/integrators.dir/integrators.c.o -c /home/shamaeib/simsuite_c/src/integrators/integrators.c",
+  "file": "/home/shamaeib/simsuite_c/src/integrators/integrators.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/integrators",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/integrators.dir/midpoint.c.o -c /home/shamaeib/simsuite_c/src/integrators/midpoint.c",
+  "file": "/home/shamaeib/simsuite_c/src/integrators/midpoint.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/integrators",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/integrators.dir/velocity_verlet.c.o -c /home/shamaeib/simsuite_c/src/integrators/velocity_verlet.c",
+  "file": "/home/shamaeib/simsuite_c/src/integrators/velocity_verlet.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/systems",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/systems.dir/systems.c.o -c /home/shamaeib/simsuite_c/src/systems/systems.c",
+  "file": "/home/shamaeib/simsuite_c/src/systems/systems.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/systems",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/systems.dir/pendulum.c.o -c /home/shamaeib/simsuite_c/src/systems/pendulum.c",
+  "file": "/home/shamaeib/simsuite_c/src/systems/pendulum.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/systems",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/systems.dir/double_pendulum.c.o -c /home/shamaeib/simsuite_c/src/systems/double_pendulum.c",
+  "file": "/home/shamaeib/simsuite_c/src/systems/double_pendulum.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/systems",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/systems.dir/harmonic_oscillator.c.o -c /home/shamaeib/simsuite_c/src/systems/harmonic_oscillator.c",
+  "file": "/home/shamaeib/simsuite_c/src/systems/harmonic_oscillator.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/systems",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/systems.dir/spring_coupled.c.o -c /home/shamaeib/simsuite_c/src/systems/spring_coupled.c",
+  "file": "/home/shamaeib/simsuite_c/src/systems/spring_coupled.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/systems",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/systems.dir/damped_harmonic_oscillator.c.o -c /home/shamaeib/simsuite_c/src/systems/damped_harmonic_oscillator.c",
+  "file": "/home/shamaeib/simsuite_c/src/systems/damped_harmonic_oscillator.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/systems",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/systems.dir/van_der_pol.c.o -c /home/shamaeib/simsuite_c/src/systems/van_der_pol.c",
+  "file": "/home/shamaeib/simsuite_c/src/systems/van_der_pol.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/systems",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/systems.dir/mass_spring_damper.c.o -c /home/shamaeib/simsuite_c/src/systems/mass_spring_damper.c",
+  "file": "/home/shamaeib/simsuite_c/src/systems/mass_spring_damper.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/systems",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/systems.dir/driven_pendulum.c.o -c /home/shamaeib/simsuite_c/src/systems/driven_pendulum.c",
+  "file": "/home/shamaeib/simsuite_c/src/systems/driven_pendulum.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/systems",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/systems.dir/inverted_pendulum.c.o -c /home/shamaeib/simsuite_c/src/systems/inverted_pendulum.c",
+  "file": "/home/shamaeib/simsuite_c/src/systems/inverted_pendulum.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/tools",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/tools.dir/tool.c.o -c /home/shamaeib/simsuite_c/src/tools/tool.c",
+  "file": "/home/shamaeib/simsuite_c/src/tools/tool.c"
+},
+{
+  "directory": "/home/shamaeib/simsuite_c/build/src/simulate",
+  "command": "/usr/bin/gcc  -I/home/shamaeib/simsuite_c/include -g -std=gnu99 -o CMakeFiles/simulate.dir/simulate.c.o -c /home/shamaeib/simsuite_c/src/simulate/simulate.c",
+  "file": "/home/shamaeib/simsuite_c/src/simulate/simulate.c"
+}
+]
