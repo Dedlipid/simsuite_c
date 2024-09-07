@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include <stdio.h>
+
 #include "integrators.h"
-#include "systems.h"
 #include "init.h"
 #include "simulate.h"
 
@@ -33,11 +33,14 @@ int main(int argc, char **argv)
     system_acc_t update_acc = system_accs[sim_init->system_index];
     integrator_t integrator = integrator_list[sim_init->integrator_index];
 
-    double dt = sim_init->time_per_loop / sim_init->steps_per_loop;
     simulate(system, update_acc, sim_init->total_loops,
-             sim_init->steps_per_loop, dt, sim_init->out_name, integrator);
+             sim_init->steps_per_loop, 
+             sim_init->time_per_loop / sim_init->steps_per_loop, 
+             sim_init->out_name, integrator);
 
     free_system(system);
+    free(sim_init->out_name);
+    free(sim_init);
 
     return 0;
 }

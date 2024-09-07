@@ -21,9 +21,7 @@ void print_init(sim_init_t *sim_init)
     printf("out_name = %s\n", sim_init->out_name);
     printf("total_loops = %d\n", sim_init->total_loops);
     for (int i = 0; i < SYS_PARAM_MAX; i++)
-    {
         printf("setup[%d] = %lf\n", i, sim_init->setup[i]);
-    }
 }
 
 void parse_values(const char *arg, double *values)
@@ -36,9 +34,8 @@ void parse_values(const char *arg, double *values)
     while (token != NULL && index < SYS_PARAM_MAX)
     {
 
-        values[index] = atof(token);
-        //printf("values[%d] = %lf\n", index, values[index]);
-        index++;
+        values[index++] = atof(token);
+        // printf("values[%d] = %lf\n", index, values[index]);
         token = strtok(NULL, ",");
     }
     values[SYS_PARAM_MAX] = index;
@@ -54,9 +51,7 @@ void output_path(char *name, char *out_name, char argc, char **argv)
 {
     char resolved_path[PATH_MAX];
     if (argv[0][0] == '/')
-    {
         realpath(argv[0], resolved_path);
-    }
     else
     {
         char cwd[PATH_MAX];
@@ -73,8 +68,7 @@ void output_path(char *name, char *out_name, char argc, char **argv)
         }
     }
     char *dir = dirname(resolved_path);
-    char filepath[PATH_MAX];
-    snprintf(out_name, sizeof(filepath), "%s/../%s%s.csv", dir,
+    snprintf(out_name, 64 * sizeof(char), "%s/../%s%s.csv", dir,
              "data/", name);
     assert(strlen(out_name) < PATH_MAX);
     assert(strlen(out_name) > 0);
@@ -92,7 +86,7 @@ void init_systems(char argc, char **argv,
            total_time = 10.0;
     char *name = "test";
 
-    while ((opt = getopt(argc, argv, "s:i:t:T:l:c:o:")) != -1)
+    while ((opt = getopt(argc, argv, "s:i:t:T:l:c:o:N:")) != -1)
     {
         switch (opt)
         {

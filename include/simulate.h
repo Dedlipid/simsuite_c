@@ -1,3 +1,6 @@
+#ifndef SIMULATE_H
+#define SIMULATE_H
+
 #include "integrators.h"
 
 typedef struct
@@ -16,3 +19,5 @@ extern void simulate(system_t *system,
                      int loops, int per_loop, double dt,
                      const char *output_filename,
                      integrator_t integrator);
+
+#endif // SIMULATE_H

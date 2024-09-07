@@ -1,3 +1,6 @@
+#ifndef INIT_H
+#define INIT_H
+
 typedef struct
 {
     char system_index;
@@ -14,3 +17,5 @@ extern void print_init(sim_init_t *sim_init);
 extern void parse_values(const char *arg, double *values);
 extern void init_systems(char argc, char **argv,
                          sim_init_t *sim_init);
+
+#endif // INIT_H

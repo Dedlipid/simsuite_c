@@ -1,10 +1,11 @@
 #ifndef INTEGRATORS_H
 #define INTEGRATORS_H
 
+#include "systems.h"
+
 #define INTEGRATOR_N 8
 #define INTEGRATOR_INTG_NAME_MAX 10
 
-#include "systems.h"
 typedef void (*integrator_t)(system_t *, double, int, void (*acc)(system_t *));
 
 void euler_step(system_t *system, double dt, int steps,
