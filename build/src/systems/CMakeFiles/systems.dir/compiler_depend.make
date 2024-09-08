@@ -47,6 +47,7 @@ src/systems/CMakeFiles/systems.dir/damped_harmonic_oscillator.c.o: ../src/system
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -54,7 +55,9 @@ src/systems/CMakeFiles/systems.dir/damped_harmonic_oscillator.c.o: ../src/system
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h
 
 src/systems/CMakeFiles/systems.dir/double_pendulum.c.o: ../src/systems/double_pendulum.c \
   /usr/include/stdc-predef.h \
@@ -102,6 +105,7 @@ src/systems/CMakeFiles/systems.dir/double_pendulum.c.o: ../src/systems/double_pe
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -109,7 +113,9 @@ src/systems/CMakeFiles/systems.dir/double_pendulum.c.o: ../src/systems/double_pe
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h
 
 src/systems/CMakeFiles/systems.dir/driven_pendulum.c.o: ../src/systems/driven_pendulum.c \
   /usr/include/stdc-predef.h \
@@ -157,6 +163,7 @@ src/systems/CMakeFiles/systems.dir/driven_pendulum.c.o: ../src/systems/driven_pe
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -164,7 +171,9 @@ src/systems/CMakeFiles/systems.dir/driven_pendulum.c.o: ../src/systems/driven_pe
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h
 
 src/systems/CMakeFiles/systems.dir/harmonic_oscillator.c.o: ../src/systems/harmonic_oscillator.c \
   /usr/include/stdc-predef.h \
@@ -212,6 +221,7 @@ src/systems/CMakeFiles/systems.dir/harmonic_oscillator.c.o: ../src/systems/harmo
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -219,7 +229,9 @@ src/systems/CMakeFiles/systems.dir/harmonic_oscillator.c.o: ../src/systems/harmo
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h
 
 src/systems/CMakeFiles/systems.dir/inverted_pendulum.c.o: ../src/systems/inverted_pendulum.c \
   /usr/include/stdc-predef.h \
@@ -267,6 +279,7 @@ src/systems/CMakeFiles/systems.dir/inverted_pendulum.c.o: ../src/systems/inverte
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -274,7 +287,9 @@ src/systems/CMakeFiles/systems.dir/inverted_pendulum.c.o: ../src/systems/inverte
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h
 
 src/systems/CMakeFiles/systems.dir/mass_spring_damper.c.o: ../src/systems/mass_spring_damper.c \
   /usr/include/stdc-predef.h \
@@ -322,6 +337,7 @@ src/systems/CMakeFiles/systems.dir/mass_spring_damper.c.o: ../src/systems/mass_s
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -329,7 +345,9 @@ src/systems/CMakeFiles/systems.dir/mass_spring_damper.c.o: ../src/systems/mass_s
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h
 
 src/systems/CMakeFiles/systems.dir/pendulum.c.o: ../src/systems/pendulum.c \
   /usr/include/stdc-predef.h \
@@ -377,6 +395,7 @@ src/systems/CMakeFiles/systems.dir/pendulum.c.o: ../src/systems/pendulum.c \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -384,7 +403,9 @@ src/systems/CMakeFiles/systems.dir/pendulum.c.o: ../src/systems/pendulum.c \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h
 
 src/systems/CMakeFiles/systems.dir/spring_coupled.c.o: ../src/systems/spring_coupled.c \
   /usr/include/stdc-predef.h \
@@ -432,6 +453,7 @@ src/systems/CMakeFiles/systems.dir/spring_coupled.c.o: ../src/systems/spring_cou
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -439,7 +461,9 @@ src/systems/CMakeFiles/systems.dir/spring_coupled.c.o: ../src/systems/spring_cou
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h
 
 src/systems/CMakeFiles/systems.dir/systems.c.o: ../src/systems/systems.c \
   /usr/include/stdc-predef.h \
@@ -487,6 +511,7 @@ src/systems/CMakeFiles/systems.dir/systems.c.o: ../src/systems/systems.c \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -494,7 +519,9 @@ src/systems/CMakeFiles/systems.dir/systems.c.o: ../src/systems/systems.c \
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h
 
 src/systems/CMakeFiles/systems.dir/van_der_pol.c.o: ../src/systems/van_der_pol.c \
   /usr/include/stdc-predef.h \
@@ -542,6 +569,7 @@ src/systems/CMakeFiles/systems.dir/van_der_pol.c.o: ../src/systems/van_der_pol.c
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/select2.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
   /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
   /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -549,7 +577,9 @@ src/systems/CMakeFiles/systems.dir/van_der_pol.c.o: ../src/systems/van_der_pol.c
   /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
   /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
-  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h
+  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+  /usr/include/x86_64-linux-gnu/bits/stdlib.h
 
 
 ../src/systems/van_der_pol.c:
@@ -559,6 +589,10 @@ src/systems/CMakeFiles/systems.dir/van_der_pol.c.o: ../src/systems/van_der_pol.c
 ../src/systems/spring_coupled.c:
 
 ../src/systems/pendulum.c:
+
+../src/systems/mass_spring_damper.c:
+
+../src/systems/inverted_pendulum.c:
 
 /usr/include/x86_64-linux-gnu/bits/waitstatus.h:
 
@@ -614,11 +648,13 @@ src/systems/CMakeFiles/systems.dir/van_der_pol.c.o: ../src/systems/van_der_pol.c
 
 /usr/include/features.h:
 
+/usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
-/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
-
 ../src/systems/harmonic_oscillator.c:
+
+/usr/include/x86_64-linux-gnu/bits/fp-logb.h:
 
 /usr/include/x86_64-linux-gnu/bits/uintn-identity.h:
 
@@ -631,10 +667,6 @@ src/systems/CMakeFiles/systems.dir/van_der_pol.c.o: ../src/systems/van_der_pol.c
 /usr/include/x86_64-linux-gnu/bits/mathcalls.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
-
-/usr/include/stdc-predef.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -652,6 +684,8 @@ src/systems/CMakeFiles/systems.dir/van_der_pol.c.o: ../src/systems/van_der_pol.c
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h:
 
+/usr/include/x86_64-linux-gnu/bits/select2.h:
+
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
@@ -666,7 +700,11 @@ src/systems/CMakeFiles/systems.dir/van_der_pol.c.o: ../src/systems/van_der_pol.c
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
 
-../src/systems/mass_spring_damper.c:
+/usr/include/stdc-predef.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h:
 
 /usr/include/x86_64-linux-gnu/bits/wordsize.h:
 
@@ -675,5 +713,3 @@ src/systems/CMakeFiles/systems.dir/van_der_pol.c.o: ../src/systems/van_der_pol.c
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 ../src/systems/driven_pendulum.c:
-
-../src/systems/inverted_pendulum.c:

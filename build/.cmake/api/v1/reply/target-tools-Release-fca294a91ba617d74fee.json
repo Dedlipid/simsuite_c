@@ -3,7 +3,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "src/simulate/libsimulate.a"
+			"path" : "src/tools/libtools.a"
 		}
 	],
 	"backtrace" : 1,
@@ -16,7 +16,7 @@
 		],
 		"files" : 
 		[
-			"src/simulate/CMakeLists.txt",
+			"src/tools/CMakeLists.txt",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -47,7 +47,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
+					"fragment" : "-O3 -DNDEBUG"
 				},
 				{
 					"fragment" : "-std=gnu99"
@@ -75,13 +75,13 @@
 			]
 		}
 	],
-	"id" : "simulate::@d0c81352177c154f4445",
-	"name" : "simulate",
-	"nameOnDisk" : "libsimulate.a",
+	"id" : "tools::@de05559f4338c8534979",
+	"name" : "tools",
+	"nameOnDisk" : "libtools.a",
 	"paths" : 
 	{
-		"build" : "src/simulate",
-		"source" : "src/simulate"
+		"build" : "src/tools",
+		"source" : "src/tools"
 	},
 	"sourceGroups" : 
 	[
@@ -98,7 +98,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "src/simulate/simulate.c",
+			"path" : "src/tools/tool.c",
 			"sourceGroupIndex" : 0
 		}
 	],

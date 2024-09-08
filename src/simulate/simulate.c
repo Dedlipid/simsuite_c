@@ -18,11 +18,12 @@ void simulate(system_t *system,
         perror("fopen");
 
     fprintf(file, "t,");
-    for (int i = 0; i < system->size[0]; i++)
+    for (unsigned int i = 0; i < system->size[0]; i++)
         fprintf(file, "p%d,q%d,", i, i);
     fprintf(file, "\n");
 
-    for (int i = 0; i < loops; i++)
+    //simulation loop
+    for (unsigned int i = 0; i < loops; i++)
     {
         fprintf(file, "%lf,", dt * per_loop * i);
         for (int j = 0; j < system->size[0]; j++)

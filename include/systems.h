@@ -4,8 +4,8 @@
 #include <math.h>
 #include <stdlib.h>
 
-#define SYS_N 6
-#define INTG_NAME_MAX 30
+#define SYS_N 9
+#define INTG_NAME_MAX 32
 #define SYS_PARAM_MAX 12
 
 typedef struct
@@ -72,6 +72,6 @@ extern create_system_t create_systems[SYS_N];
 extern double system_specs[SYS_N][SYS_PARAM_MAX];
 
 // Length of system_specs lengths
-extern int system_spec_length[SYS_N];
+extern unsigned char system_spec_length[SYS_N];
 
 #endif

@@ -14,7 +14,7 @@ typedef struct
 
 } sim_init_t;
 extern void print_init(sim_init_t *sim_init);
-extern void parse_values(const char *arg, double *values);
+extern void parse_values(const char *arg, double *values, char length);
 extern void init_systems(char argc, char **argv,
                          sim_init_t *sim_init);
 

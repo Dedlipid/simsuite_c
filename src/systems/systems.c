@@ -53,7 +53,7 @@ double system_specs[SYS_N][SYS_PARAM_MAX] = {
 };
 
 // Lengths of system_specs
-int system_spec_length[SYS_N] = {
+unsigned char system_spec_length[SYS_N] = {
     4, // Pendulum
     9, // Double Pendulum
     4, // Harmonic Oscillator

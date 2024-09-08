@@ -1,1 +1,1 @@
-/usr/bin/gcc -g CMakeFiles/sim.dir/src/main.c.o -o sim  libinit.a src/integrators/libintegrators.a src/systems/libsystems.a src/tools/libtools.a src/simulate/libsimulate.a -lm 
+/usr/bin/gcc -O3 -DNDEBUG CMakeFiles/sim.dir/src/main.c.o -o sim  libinit.a src/integrators/libintegrators.a src/systems/libsystems.a src/tools/libtools.a src/simulate/libsimulate.a -lm 

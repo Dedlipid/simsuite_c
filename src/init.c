@@ -24,25 +24,23 @@ void print_init(sim_init_t *sim_init)
         printf("setup[%d] = %lf\n", i, sim_init->setup[i]);
 }
 
-void parse_values(const char *arg, double *values)
+void parse_values(const char *arg, double *values, char length)
 {
-    char *token;
-    char *input_copy = strdup(arg);
+    char *token,
+        *input_copy = strdup(arg);
+    if (input_copy == NULL)
+    {
+        perror("strdup");
+        exit(EXIT_FAILURE);
+    }
+
     int index = 0;
 
     token = strtok(input_copy, ",");
-    while (token != NULL && index < SYS_PARAM_MAX)
+    while (token != NULL && index < length)
     {
-
         values[index++] = atof(token);
-        // printf("values[%d] = %lf\n", index, values[index]);
         token = strtok(NULL, ",");
-    }
-    values[SYS_PARAM_MAX] = index;
-    if (index > SYS_PARAM_MAX)
-    {
-        fprintf(stderr, "Invalid number of parameters\n");
-        exit(EXIT_FAILURE);
     }
     free(input_copy);
 }
@@ -52,6 +50,7 @@ void output_path(char *name, char *out_name, char argc, char **argv)
     char resolved_path[PATH_MAX];
     if (argv[0][0] == '/')
         realpath(argv[0], resolved_path);
+
     else
     {
         char cwd[PATH_MAX];
@@ -60,6 +59,11 @@ void output_path(char *name, char *out_name, char argc, char **argv)
             strcat(cwd, "/");
             strcat(cwd, argv[0]);
             realpath(cwd, resolved_path);
+            if (realpath(cwd, resolved_path) == NULL)
+            {
+                perror("realpath");
+                exit(EXIT_FAILURE);
+            }
         }
         else
         {
@@ -68,9 +72,12 @@ void output_path(char *name, char *out_name, char argc, char **argv)
         }
     }
     char *dir = dirname(resolved_path);
-    snprintf(out_name, 64 * sizeof(char), "%s/../%s%s.csv", dir,
-             "data/", name);
-    assert(strlen(out_name) < PATH_MAX);
+    if (snprintf(out_name, 64 * sizeof(char), "%s/../%s%s.csv", dir,
+                 "data/", name) >= 64)
+    {
+        fprintf(stderr, "Output path too long\n");
+        exit(EXIT_FAILURE);
+    };
     assert(strlen(out_name) > 0);
 }
 
@@ -79,12 +86,16 @@ void init_systems(char argc, char **argv,
 {
     char params_set = 0;
     int opt;
-    int system_index = 1,
-        integrator_index = 3,
-        steps_per_loop = 100;
+    unsigned char system_index = 1,
+                  integrator_index = 3;
+    unsigned int steps_per_loop = 100;
     double time_per_loop = 0.01,
            total_time = 10.0;
     char *name = "test";
+
+    // Initialize setup parameters with default values
+    memset(sim_init->setup, 0, sizeof(sim_init->setup));
+    memcpy(sim_init->setup, system_specs[system_index], sizeof(double) * system_spec_length[system_index]);
 
     while ((opt = getopt(argc, argv, "s:i:t:T:l:c:o:N:")) != -1)
     {
@@ -104,10 +115,14 @@ void init_systems(char argc, char **argv,
             break;
         case 'l':
             steps_per_loop = atoi(optarg);
+            if (steps_per_loop <= 0)
+            {
+                fprintf(stderr, "Invalid steps_per_loop value\n");
+                exit(EXIT_FAILURE);
+            }
             break;
         case 'c':
-            params_set = 1;
-            parse_values(optarg, sim_init->setup);
+            parse_values(optarg, sim_init->setup, system_spec_length[system_index]);
             break;
         case 'o':
             name = optarg;
@@ -120,20 +135,23 @@ void init_systems(char argc, char **argv,
         }
     }
 
-    if (system_index < 0 || system_index >= sizeof(system_names) / sizeof(char *))
+    if (system_index < 0 || system_index >= SYS_N)
     {
         fprintf(stderr, "Invalid system index\n");
         exit(EXIT_FAILURE);
     }
 
-    if (integrator_index < 0 || integrator_index >= sizeof(integrator_names) / sizeof(char *))
+    if (integrator_index < 0 || integrator_index >= INTEGRATOR_N)
     {
         fprintf(stderr, "Invalid integrator index\n");
         exit(EXIT_FAILURE);
     }
 
-    if (!params_set)
-        memccpy(sim_init->setup, system_specs[system_index], SYS_PARAM_MAX, sizeof(double) * system_spec_length[system_index]);
+    if (time_per_loop <= 0.0 || total_time <= 0.0)
+    {
+        fprintf(stderr, "Invalid time_per_loop or total_time values\n");
+        exit(EXIT_FAILURE);
+    }
 
     sim_init->total_loops = 1 + total_time / time_per_loop;
     sim_init->system_index = system_index;
